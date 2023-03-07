@@ -52,11 +52,19 @@ SET
 
 	
 # Annotations
-### returns if given annotation is present	
+### returns if given annotation is present on class
 
 	class.isAnnotationPresent(<annotation-name>.class);
 	
+### see if method has annotation
 
+	method.isAnnotationPresent(<annotation-name>.class);
+
+### get annotation
+
+	<an-name> an = method.getAnnotation(<an-name>.class);
+	// get params, if any, by:
+	an.paramName();
 
 
 
