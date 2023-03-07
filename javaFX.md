@@ -53,4 +53,39 @@ Let's make a 3x3 grid and add some orange rectangle outlines
 		}
 	}
 	
-	
+Other shapes... google em!
+
+But we want to interact. Eventhandlers are here
+
+EventHandler: class with a handle() method (functional interface)
+
+register an eventhandler with something that can create events, it'll call handle when the event occurs
+
+handle() is then a callback subroutine (listener)
+we're gonna usually have eventhandlers be anon classes, defined inline to access variables within the scope of interest
+
+Lets look at code to add a button that does something
+
+	Button b = new Button("Randomize");
+	grid.add(b, 0, 2);
+	button.setOnAction(new EventHandler<ActionEvent>(){
+		@Override
+		public void handle(){
+			// do some random stuff
+		}
+	});
+
+Now button will call handle() when pressed, the anon class acts almost as a lambda but for entire classes instead of funcs.
+Could pass a regular named extension of EventHandler<ActionEvent>() if needed, usually you dont, benifit of not is accessing local vars (instance vars)
+Anon classes still get .class files, <parentFile>$<number>
+
+
+
+
+
+
+
+
+
+
+
