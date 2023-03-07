@@ -26,4 +26,15 @@ the play occurs. It's a window on our screen.
 The FX Scene class is the container for all content. think of it as a scene in a play
 Nodes are the actors to perform in the scene.
 
+An object of our class is created in the JVM, Stage is created and start is run
+
+Stage contains Scene(s) which contains StackPanes? root? TODO more on this...
+
+The root node (instance of StackPane) is crated and passed to scene constructor,
+along with W/H
+
+See slide for diags
+
+Root node begins a tree graph that represents everything in a scene.
+
 
