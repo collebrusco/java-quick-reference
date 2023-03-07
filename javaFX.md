@@ -37,4 +37,20 @@ See slide for diags
 
 Root node begins a tree graph that represents everything in a scene.
 
+can make a grid node with 
 
+	GridPane grid = new GridPane();
+	// pass to scene as root 
+
+Let's make a 3x3 grid and add some orange rectangle outlines
+
+	for (int i = 0; i < 3; i++){
+		for (int j = 0; j < 3; j++){
+			Shape sh = new Rectangle(100, 100);
+			sh.setFill(null);
+			sh.setStroke(Color.ORANGE);
+			grid.add(sh, i, j);
+		}
+	}
+	
+	
