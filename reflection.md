@@ -1,22 +1,22 @@
-#======== REFLECTION QUICK REFERENCE ========
+# ======== REFLECTION QUICK REFERENCE ========
 
-#Getting Class class instances
+# Getting Class class instances
 
-##Get a Class class from string name of class
+## Get a Class class from string name of class
 
 	Class c = Class.forName("class-name");
 
-##Get a Class class from existing obj
+## Get a Class class from existing obj
 
 	Class<?> c = obj.getClass();
 
-#Fields
+# Fields
 
-###Gets all fields in class, including those inherited
+### Gets all fields in class, including those inherited
 
 	Field[] fields = c.getFields();
 
-###Gets all fields declared in class, EXCLUDING inherited fields.
+### Gets all fields declared in class, EXCLUDING inherited fields.
 
 	Field[] fields = c.getDeclaredFields();
 
@@ -28,7 +28,7 @@ SET
 
  	field.setAccessible(boolean);
 
-#Methods
+# Methods
 
 	
 	
