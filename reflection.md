@@ -1,4 +1,4 @@
-# ======== REFLECTION QUICK REFERENCE ========
+# REFLECTION QUICK REFERENCE
 
 # Getting Class class instances
 
@@ -30,5 +30,42 @@ SET
 
 # Methods
 
+### Gets all methods in class, incl. inherited
+
+	Method[] methods = c.getMethods();	
 	
+### Gets all methods in class, EXCLUDING inherited
 	
+	Method[] methods = c.getDeclaredMethods();
+
+## Invocations
+	
+	method.invoke(obj, Args <...>);
+	// watch for private/static exceptions as with fields
+	// to call static method:
+	
+	method.invoke(null, Args <...>);
+
+	// to access private methods:
+
+	method.setAccessible(boolean);
+
+	
+# Annotations
+### returns if given annotation is present	
+
+	class.isAnnotationPresent(<annotation-name>.class);
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
