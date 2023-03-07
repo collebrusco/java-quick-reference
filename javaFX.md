@@ -79,6 +79,8 @@ Now button will call handle() when pressed, the anon class acts almost as a lamb
 Could pass a regular named extension of EventHandler<ActionEvent>() if needed, usually you dont, benifit of not is accessing local vars (instance vars)
 Anon classes still get .class files, <parentFile>$<number>
 
+On a gridpane, call getChildren() to get list of children, can then edit.
+
 
 
 
